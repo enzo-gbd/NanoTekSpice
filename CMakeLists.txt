@@ -1,0 +1,7 @@
+cmake_minimum_required( VERSION 3.13 )
+set(CMAKE_BUILD_TYPE Release)
+project (nanotekspice)
+add_subdirectory(src)
+target_include_directories(nanotekspice PUBLIC /usr/local/Cellar/fmt/8.1.1/include/)
+set_target_properties(nanotekspice PROPERTIES CXX_STANDARD 17)
+set_target_properties(nanotekspice PROPERTIES CXX_STANDARD_REQUIRED 17)
